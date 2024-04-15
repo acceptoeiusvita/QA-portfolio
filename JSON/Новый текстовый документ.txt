@@ -1,0 +1,63 @@
+{
+	"Me":{
+		"Gender":"Male",
+		"Full name":"Yudin Sergei",
+		"Age":27,
+		"Country":"Belarus",
+		"Languages":["Russian","English","Belarusian"],
+		"Skills":true,
+		"Bad qualities":null,
+		"Education":"Power engineer",
+		"School number":5,
+		"Classmates friends":[
+		{
+		"Name":"Sasha Vertinskiu",
+		"Age":26
+		},
+		{
+			"Name":"Kirill Lapkov",
+			"Age":26
+		},
+		{
+		"Name":"Dmitriu Styrchenko",
+		"Age":27
+		},
+		{
+			"Name":"Nastya Luchkova",
+			"Age":26
+		}
+		],
+		"University friends":["Dmitriu Maleu","Artem Kozlov","Lesha Zhykov"],
+		"Favorite color":"Black",
+		"Car":null,
+		"Favorite car":null,
+		"Hobbies":["Video games","Music","Dream"],
+		"Kids":null,
+		"Abilities":[
+		{
+			"Teleportation":"Expert level"
+		},
+		{
+			"Flying":"Entry level"
+		},
+		{
+			"Mind reading":"Basic level"
+		},
+		{
+			"Telekinesis":"Upper-basic level"
+		},
+		{
+			"Invisible":"Medium level"
+		},
+		{
+			"Fire abilities":false
+		},
+		{
+			"Immortality":true
+		}
+		],
+		"Movies and serials are liked":["The boys","supernatural 1-5 season","Invincible","Avengers 1-4"],
+		"IQ":"2*2*2*2*2*2*2*2",
+		"Height":5.7
+	}
+}

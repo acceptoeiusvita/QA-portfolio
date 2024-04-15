@@ -1,0 +1,184 @@
+                                                         Creation of database, tables and filling of tables
+
+CREATE database Yudin_Sergei;
+
+USE Yudin_Sergei;
+
+CREATE TABLE employees (
+employee_id INT AUTO_INCREMENT PRIMARY KEY,
+first_name VARCHAR(30) NOT NULL,
+last_name VARCHAR(30) NOT NULL,
+age INT(4) NOT NULL,
+education VARCHAR(30) NOT NULL
+);
+
+INSERT INTO employees (first_name, last_name, age, education) VALUES
+("Sasha", "Vertinskiu", 26, "Higher"),
+("Kirill", "Lapkov", 26, "Medium"),
+("Nastya", "Luchkova", 27, "Higher"),
+("Dmitriu", "Styrchenko", 27, "Higher"),
+("Nastya", "Lobacheva", 27, "Medium"),
+("Pavel", "Konovalov", 26, "Higher"),
+("Vlad", "Xashkov", 27, "Medium");
+
+CREATE TABLE customers (
+customer_id INT AUTO_INCREMENT PRIMARY KEY,
+height INT(10),
+eyes_color VARCHAR(30),
+employee_id INT,
+FOREIGN KEY(employee_id) REFERENCES employees(employee_id)
+);
+
+INSERT INTO customers (height, eyes_color, employee_id) VALUES 
+(167, "blue", 1),
+(180, "green", 2),
+(NULL, "yellow", 3),
+(176, NULL, 4),
+(172, "grey", 5),
+(170, "purple", 6),
+(173, "red", 7);
+
+ALTER TABLE employees ADD COLUMN work_experience INT(4);
+
+UPDATE employees SET work_experience = 2 WHERE employee_id = 1;
+UPDATE employees SET work_experience = 3 WHERE employee_id = 2;
+UPDATE employees SET work_experience = 5 WHERE employee_id = 3;
+UPDATE employees SET work_experience = 7 WHERE employee_id = 5;
+UPDATE employees SET work_experience = 4 WHERE employee_id = 7;
+
+
+                                                                 Queries with different operators
+
+SELECT * FROM employees;
+
+SELECT * FROM customers;
+
+SELECT first_name, last_name FROM employees WHERE age <=26;
+
+SELECT customer_id FROM customers WHERE height >=170 AND eyes_color LIKE "_r%";
+
+SELECT education FROM employees WHERE work_experience IS NOT NULL LIMIT 3;
+
+SELECT height FROM customers ORDER BY height DESC;
+
+SELECT DISTINCT employee_id FROM employees WHERE work_experience IS NULL AND last_name LIKE "%ch%";
+
+SELECT DISTINCT eyes_color AS DISTINCT_EYES_COLOR FROM customers WHERE eyes_color IS NOT NULL;
+
+SELECT COUNT(height) AS BYBYBYBY FROM customers;
+
+SELECT SUM(height) AS SUM_height FROM customers;
+
+SELECT MAX(height) AS MAX_height FROM customers;
+
+SELECT AVG(height) AS AVG_height FROM customers;
+
+SELECT MIN(height) AS MIN_height FROM customers;
+
+SELECT AVG(work_experience), education FROM employees GROUP BY education;
+
+SELECT AVG(work_experience), education FROM employees WHERE employee_id >= 3 GROUP BY education;
+
+INSERT INTO employees (first_name, last_name, age, education, work_experience) VALUES ("Papa", "Carlo", 60, "Medium", 20);
+
+SELECT work_experience FROM employees WHERE work_experience BETWEEN 5 AND 20;
+
+SELECT height FROM customers WHERE height IN (167,173);
+
+UPDATE employees SET work_experience = 35 WHERE employee_id = 8;
+
+SELECT employees.employee_id, employees.work_experience, customers.height, customers.eyes_color FROM employees JOIN customers ON employees.employee_id = customers.employee_id;
+
+SELECT employees.employee_id, employees.work_experience, customers.height, customers.eyes_color FROM employees LEFT JOIN customers ON employees.employee_id = customers.employee_id;
+
+SELECT employees.employee_id, employees.work_experience, customers.height, customers.eyes_color FROM employees RIGHT JOIN customers ON employees.employee_id = customers.employee_id;
+
+SELECT age FROM employees UNION SELECT height FROM customers;
+
+SELECT employee_id FROM employees UNION ALL SELECT employee_id FROM customers;
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

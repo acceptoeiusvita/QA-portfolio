@@ -1,0 +1,69 @@
+<?xml verison="1.0" encoding="UTF-8"?>
+<person>
+<Me>
+<Gender>Male</Gender>
+<Fullname>Yudin Sergei</Fullname>
+<Age>27</Age>
+<Country>Belarus</Country>
+<Languages>Russian</Languages>
+<Languages>English</Languages>
+<Languages>Belarusian</Languages>
+<Skills>true</Skills>
+<Badqualities />
+<Education>Power engineer</Education>
+<Schoolnumber>5</Schoolnumber>
+<Classmatesfriends>
+<Name>Sasha Vertinskiu</Name>
+<Age>26</Age>
+</Classmatesfriends>
+<Classmatesfriends>
+<Name>Kirill Lapkov</Name>
+<Age>26</Age>
+</Classmatesfriends>
+<Classmatesfriends>
+<Name>Dmitriu Styrchenko</Name>
+<Age>27</Age>
+</Classmatesfriends>
+<Classmatesfriends>
+<Name>Nastya Luchkova</Name>
+<Age>26</Age>
+</Classmatesfriends>
+<Universityfriends>Dmitriu Maleu</Universityfriends>
+<Universityfriends>Artem Kozlov</Universityfriends>
+<Universityfriends>Lesha Zhykov</Universityfriends>
+<Favoritecolor>Black</Favoritecolor>
+<Car />
+<Favoritecar />
+<Hobbies>Video games</Hobbies>
+<Hobbies>Music</Hobbies>
+<Hobbies>Dream</Hobbies>
+<Kids />
+<Abilities>
+<Teleportation>Expert level</Teleportation>
+</Abilities>
+<Abilities>
+<Flying>Entry level</Flying>
+</Abilities>
+<Abilities>
+<Mindreading>Basic level</Mindreading>
+</Abilities>
+<Abilities>
+<Telekinesis>Upper-basic level</Telekinesis>
+</Abilities>
+<Abilities>
+<Invisible>Medium level</Invisible>
+</Abilities>
+<Abilities>
+<Fireabilities>false</Fireabilities>
+</Abilities>
+<Abilities>
+<Immortality>true</Immortality>
+</Abilities>
+<Moviesandserialsareliked>The boys</Moviesandserialsareliked>
+<Moviesandserialsareliked>supernatural 1-5 season</Moviesandserialsareliked>
+<Moviesandserialsareliked>Invincible</Moviesandserialsareliked>
+<Moviesandserialsareliked>Avengers 1-4</Moviesandserialsareliked>
+<IQ>2*2*2*2*2*2*2*2</IQ>
+<Height>5.7</Height>
+</Me>
+</person>
